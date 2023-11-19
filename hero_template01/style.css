@@ -31,7 +31,7 @@ header {
 
 .hero {
     background-color: rgb(17, 16, 13);
-    background-image: url(../img/bg-hero-section.jpg);
+    background-image: url(./img/bg-hero-section.jpg);
     background-size: cover;
     background-position: top;
     height: clamp(200px, 50vw, 300px);
