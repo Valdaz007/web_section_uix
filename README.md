@@ -9,4 +9,4 @@ It includes designs of various parts of a websites such as:
 - image
 - blog section
 
-The code will include raw html and css as well as bootstrap.
+The code will include raw html, css and javascript.
