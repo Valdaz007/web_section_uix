@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero__cont">
+            <img src="./img/backpack.png" alt="">
+            <img src="./img/working-suit.png" alt="">
+            <img src="./img/tshirt.png" alt="">
+            <img src="./img/sunglasses.png" alt="">
+            <img src="./img/socks.png" alt="">
+            <img src="./img/sleeveless.png" alt="">
+            <img src="./img/short.png" alt="">
+            <img src="./img/cap.png" alt="">
+        </div>
+    </section>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero {
+            position: relative;
+            height: 40vh;
+            background: thistle;
+        }
+
+        .hero__cont {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+
+            & img {
+                position: absolute;
+                border-radius: 3px;
+                padding: 10px;
+
+                background-color: transparent;
+                box-shadow: 0 0 10px aquamarine;
+                
+                animation-name: rotateImg;
+                animation-duration: 10s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+
+
+                &:nth-child(1) {
+                    top: 10%;
+                    left: 10%;
+                    border-radius: 40%;
+                    box-shadow: 0 0 10px tomato;
+
+                    animation: rotateImg 15s linear infinite reverse;
+                }
+
+                &:nth-child(2) {
+                    top: 30%;
+                    left: 35%;
+                }
+
+                &:nth-child(3) {
+                    top: 10%;
+                    left: 60%;
+                    border-radius: 40%;
+                    background-color: rgba(218, 165, 32, 0.45);
+
+                    animation: rotateImg 15s linear infinite reverse;
+                }
+
+                &:nth-child(4) {
+                    top: 30%;
+                    left: 85%;
+                    box-shadow: 0 0 10px black;
+                }
+
+                &:nth-child(5) {
+                    bottom: 30%;
+                    left: 10%;
+                    background: #ffffff55;
+
+                    animation: rotateImg 15s linear infinite reverse;
+                }
+
+                &:nth-child(6) {
+                    bottom: 10%;
+                    left: 35%;
+                    border-radius: 40%;
+                    box-shadow: 0 0 10px hotpink;
+                }
+
+                &:nth-child(7) {
+                    bottom: 30%;
+                    left: 60%;
+                    background: rgba(102, 51, 153, 0.2);
+                    box-shadow: 0 0 5px greenyellow;
+
+                    animation: rotateImg 15s linear infinite reverse;  
+                }
+
+                &:nth-child(8) {
+                    bottom: 10%;
+                    left: 85%;
+                    border-radius: 40%;
+                    background: turquoise;
+                }
+            }
+        }
+
+        @media(min-width: 425px) {
+            .hero__cont {
+                width: 90%;
+                border: 1px solid red;
+            }
+        }
+
+        @media(min-width: 768px) {
+            .hero__cont {
+                width: 80%;
+            }
+        }
+
+        @keyframes rotateImg {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</body>
+</html>
